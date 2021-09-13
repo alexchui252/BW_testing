@@ -1,0 +1,104 @@
+<html lang="en">
+    <html lang="en">
+        <head>
+            
+        </head>
+<body>
+    
+<!-- navbar -->
+<header>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="row">
+            <div class="col s12 l6" id="welcome_message">
+                <h2>
+                    <span>About us</span>
+                </h1>
+            </div>
+        </div>
+        <div class="parallax">
+            <img src="img/banner-original.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+</header>
+
+<!-- tabs -->
+<section class="container section scrollspy" id="about">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">What we do...</h2>
+            <p>Hey there! At BioinformaticsWorkflows, we aim to be a comprehensive resource for researchers at every level to come and leanr more about the field of bioinformatics, from the math and science principles that make bioinformatics possible as well as how to implement code for your specific project</p>
+            <p>If you're interested in working with us, have suggestions for our content, or just want to have a chat, fill out the contact form at the bottom of the page! Besides providing educational resources, we also want to facilitate connections between researchers that could become fruitful collaborations!</p>
+        </div>
+
+        <div class="col s12 l6 offset-l1">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                </li>
+            </ul>
+            <div class="col s12" id="photography">
+                <p class="flow-text indigo-text text-darken-4">Photography</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis assumenda at cum dolorum nostrum repudiandae explicabo! Consectetur error quidem voluptate animi reiciendis quas iure, unde laboriosam nobis, ullam molestiae!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat culpa accusamus, rem possimus vitae distinctio sequi nam aut odio reprehenderit vel porro sint animi alias vero dolorem accusantium laudantium.</p>
+            </div>  
+
+            <div class="col s12" id="editing">
+                <p class="flow-text indigo-text text-darken-4">Editing</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et harum nobis velit neque, temporibus suscipit, praesentium cupiditate sapiente voluptas odio similique distinctio natus tenetur ratione nam, dolorem molestiae! Accusamus, laborum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat culpa accusamus, rem possimus vitae distinctio sequi nam aut odio reprehenderit vel porro sint animi alias vero dolorem accusantium laudantium.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- contact form -->
+
+<section class="section container scrollspy" id="contact">
+   
+</section>
+
+<!-- footer -->
+
+<footer class="page-footer grey darken-3">
+    <li><a href="" class="grey-text text-lighten-3">
+        <i class="fab fa-envelope-open"></i> Email</a></li>
+</footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tooltipped').tooltip()
+            $('.scrollspy').scrollSpy()
+            $('.tabs').tabs();
+
+            $(window).scroll(function(){
+
+                if($(window).scrollTop()>436){
+                $('nav').addClass('cyan');
+                }else{
+                $('nav').removeClass('cyan');
+                }
+
+            });
+        });
+    </script>
+
+
+</body>
+</html>
