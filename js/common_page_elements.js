@@ -117,6 +117,10 @@ head.innerHTML =
                 .nav_scroll_background{
                     background-color:#71878d ;
                 }
+
+                html{
+                    scroll-behavior: smooth;
+                }
             </style>
 
 `;
@@ -140,7 +144,7 @@ header.insertAdjacentHTML("afterbegin",
         <li><a href="https://github.com/alexchui252/BioinformaticsWorkflows" class="btn-floating btn-small nav_icon tooltipped" data-tooltip="Github">
             <i class="fab fa-github"></i>
         </a></li>
-        <li><a href="https://linkedin.com/in/alexchui252" class="btn-floating btn-small nav_icon tooltipped" data-tooltip="Facebook">
+        <li><a href="https://linkedin.com/in/alexchui252" class="btn-floating btn-small nav_icon tooltipped" data-tooltip="LinkedIn">
             <i class="fab fa-LinkedIn"></i>
         </a></li>
     </ul>
@@ -191,7 +195,7 @@ contact_form.innerHTML =
 <div class="row">
 <div class="col s12 l5">
     <h2 class="brand-logo">Connect with us</h2>
-    <p>Fill out this form to receive updates on new posts on the site, if you're interested in working with us, or have suggestions for our content!s</p>
+    <p>Fill out this form to receive updates on new posts on the site, if you're interested in working with us, or have suggestions for our content!</p>
 </div>
 
 <div class="col s12 l5 offset-l2">

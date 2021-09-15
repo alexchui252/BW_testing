@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col s12 l6" id="welcome_message">
                 <h2>
-                    <span>About us</span>
+                    <span>Directory</span>
                 </h1>
             </div>
         </div>
@@ -24,36 +24,94 @@
 </header>
 
 <!-- tabs -->
-<section class="container section scrollspy" id="about">
+<section class="container section">
     <div class="row">
-        <div class="col s12 l5">
-            <h2 class="indigo-text text-darken-4">What we do...</h2>
-            <p>Hey there! At BioinformaticsWorkflows, we aim to be a comprehensive resource for researchers at every level to come and leanr more about the field of bioinformatics, from the math and science principles that make bioinformatics possible as well as how to implement code for your specific project</p>
-            <p>If you're interested in working with us, have suggestions for our content, or just want to have a chat, fill out the contact form at the bottom of the page! Besides providing educational resources, we also want to facilitate connections between researchers that could become fruitful collaborations!</p>
-        </div>
+        <a href="#fundamentals">
+            <div class="col s12 l4">
+                <div class="card z-depth-1">
+                    <div class="card-image">
+                        <img src="img/banner-original.jpg" alt="banana taped">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Fundamentals</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio id quis amet saepe veritatis inventore voluptatum optio, dolorem molestiae aspernatur, omnis in, accusamus quasi fugit quidem ullam quae. Ea?</p>
+                    </div>
 
-        <div class="col s12 l6 offset-l1">
-            <ul class="tabs">
-                <li class="tab col s6">
-                    <a href="#photography" class="indigo-text text-darken-4">Photography</a>
-                </li>
-                <li class="tab col s6">
-                    <a href="#editing" class="indigo-text text-darken-4">Editing</a>
-                </li>
-            </ul>
-            <div class="col s12" id="photography">
-                <p class="flow-text indigo-text text-darken-4">Photography</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis assumenda at cum dolorum nostrum repudiandae explicabo! Consectetur error quidem voluptate animi reiciendis quas iure, unde laboriosam nobis, ullam molestiae!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat culpa accusamus, rem possimus vitae distinctio sequi nam aut odio reprehenderit vel porro sint animi alias vero dolorem accusantium laudantium.</p>
-            </div>  
-
-            <div class="col s12" id="editing">
-                <p class="flow-text indigo-text text-darken-4">Editing</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et harum nobis velit neque, temporibus suscipit, praesentium cupiditate sapiente voluptas odio similique distinctio natus tenetur ratione nam, dolorem molestiae! Accusamus, laborum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat culpa accusamus, rem possimus vitae distinctio sequi nam aut odio reprehenderit vel porro sint animi alias vero dolorem accusantium laudantium.</p>
+                </div>
             </div>
+        </a> 
 
+        <a href="#tutorials">
+            <div class="col s12 l4">
+                <div class="card z-depth-1">
+                    <div class="card-image">
+                        <img src="img/banner-original.jpg" alt="banana taped">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tutorials</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio id quis amet saepe veritatis inventore voluptatum optio, dolorem molestiae aspernatur, omnis in, accusamus quasi fugit quidem ullam quae. Ea?</p>
+                    </div>
+
+                </div>
+            </div>
+        </a> 
+
+        <a href="#community">
+            <div class="col s12 l4">
+                <div class="card z-depth-1">
+                    <div class="card-image">
+                        <img src="img/banner-original.jpg" alt="banana taped">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Community</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio id quis amet saepe veritatis inventore voluptatum optio, dolorem molestiae aspernatur, omnis in, accusamus quasi fugit quidem ullam quae. Ea?</p>
+                    </div>
+
+                </div>
+            </div>
+        </a> 
+    </div>
+</section>
+
+<section class="container section" id="fundamentals">
+    <div class="row">
+        <div class="col s12 l12">
+            <h2 class="brand-logo">Fundamentals</h2>
+            
+            <ul>
+                <li><a href="">Statistics</a></li>
+                <li><a href="">Getting started with R</a></li>
+            </ul>
         </div>
+
+    </div>
+</section>
+
+<section class="container section" id="tutorials">
+    <div class="row">
+        <div class="col s12 l12">
+            <h2 class="brand-logo">Tutorials</h2>
+            
+            <ul>
+                <li><a href="">Statistics</a></li>
+                <li><a href="">Getting started with R</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="container section" id="community">
+    <div class="row">
+        <div class="col s12 l12">
+            <h2 class="brand-logo">Community</h2>
+            
+            <ul>
+                <li><a href="">Statistics</a></li>
+                <li><a href="">Getting started with R</a></li>
+            </ul>
+        </div>
+
     </div>
 </section>
 
@@ -67,8 +125,7 @@
 <!-- footer -->
 
 <footer class="page-footer grey darken-3">
-    <li><a href="" class="grey-text text-lighten-3">
-        <i class="fab fa-envelope-open"></i> Email</a></li>
+  
 </footer>
 
 
@@ -83,22 +140,25 @@
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
-            $('.tooltipped').tooltip()
-            $('.scrollspy').scrollSpy()
+            $('.tooltipped').tooltip({
+                margin: 5,
+                transitionMovement: 25
+            });
             $('.tabs').tabs();
 
             $(window).scroll(function(){
 
                 if($(window).scrollTop()>436){
-                $('nav').addClass('cyan');
+                $('nav').addClass('nav_scroll_background');
                 }else{
-                $('nav').removeClass('cyan');
+                $('nav').removeClass('nav_scroll_background');
                 }
 
             });
         });
     </script>
 
+    <script src="js/common_page_elements.js"></script>
 
 </body>
 </html>
